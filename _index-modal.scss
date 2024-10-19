@@ -1,0 +1,156 @@
+.index-dialog {
+    position: absolute;
+    width: 573px;
+    height: 480px;
+    left: -430px;
+    top: 38px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 40px 48px 40px 48px;
+    box-shadow: 0px 4px 67px -12px rgba(0, 0, 0, 0.32);
+    background: rgb(255, 255, 255);
+    border: none;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: all 1s;
+    z-index: -1;
+}
+
+.index-dialog:hover {
+    opacity: 1;
+    z-index: 1;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: left;
+}
+
+.cart-link {
+    position: relative;
+}
+
+.cart-link:hover + .index-dialog {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: left;
+    display: block;
+    opacity: 1;
+    z-index: 1;   
+}
+
+.cart-link:hover {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: left;
+}
+
+.dialog-box {
+    width: 477px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.index-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: flex;
+    gap: 32px;   
+    margin-bottom: 24px;    
+    width: 477px;
+}
+
+.info__index-title {
+    color: rgb(0, 0, 0);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    text-align: left;
+}
+
+.info__index-price {
+    color: rgb(5, 5, 5);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: left;
+}
+
+.index-link__bottom {
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 210%;
+    text-align: left;
+    text-decoration: underline;
+}
+
+.dialog-box__bottom {
+    border-top: 0.5px solid rgb(202, 205, 216);
+    padding-top: 24px;
+}
+
+.modal-item {
+    display: flex;
+    gap: 32px;
+    width: 477px;
+    height: 144px;
+   flex-direction: row;
+}
+
+.index-info {
+    width: 309px;
+    display: flex;   
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+.index-link {
+margin-top: 54px;
+}
+
+.bottom-index-box{
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    width: 573px;
+}
+
+.index-box-price {
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 150%;
+    text-align: center;
+}
+
+.index-btn {
+    width: 207px;
+    height: 40px;
+    font-family: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: 1px solid rgb(4, 4, 4);
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+}

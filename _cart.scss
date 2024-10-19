@@ -1,0 +1,321 @@
+$text-color: rgb(0, 0, 0);
+$discription-text-color: #888888;
+$background-color: rgb(247, 246, 246);
+$font-family-for-input-button: Montserrat;
+
+
+
+.top-cart {
+    background-image: url(img/cart-top.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    box-sizing: border-box;
+
+   
+}
+.top-heading {
+    margin-top: 127px;
+
+    &__title {
+        color: rgb(255, 255, 255);
+        font-size: 64px;
+        font-weight: 600;
+        line-height: 70px;
+        text-align: left;
+    }
+}
+
+.cart {
+    margin-top: 64px;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cart-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    grid-column: span 8;
+    width: 786px;
+}
+
+.column-headings {
+    display: flex;
+    justify-content: space-between;
+    max-width: 756px;
+    margin-bottom: 8px;
+
+    &__text {
+        color: rgb(0, 0, 0);
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: left;
+    }
+}
+
+.card-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: flex;
+    gap: 32px;
+    border-top: 0.5px solid rgb(202, 205, 216);
+    margin-bottom: 32px;
+    padding-top: 32px;
+    width: 786px;
+}
+
+.box-item {
+    display: flex;
+    gap: 32px;
+    width: 786px;
+   flex-direction: row;
+
+}
+
+.box-info {
+    display: flex;   
+    width: 582px;   
+    box-sizing: border-box;
+    justify-content: space-between;     
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    width: 276px;
+    gap: 14px;
+
+    &__title {
+        color: black;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 29.26px;
+        text-align: left;
+    }
+
+    &__description {
+        color: $discription-text-color;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17.07px;
+        text-align: left;
+    }
+
+    &__price {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.5px;
+        text-align: left;
+    }
+}
+
+.box-link {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    height: 29px;
+
+    &__botom {
+        color: $text-color;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 29.4px;
+        text-align: center;
+        text-decoration: underline;
+    }
+}
+
+.box-input {
+    width: 71px;
+    height: 51px;
+    position: relative;
+   
+    &__field {
+        width: 71px;
+        height: 51px;
+        border-radius: 6px;
+        border: none;
+        background: $background-color;
+        color: $text-color;
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 210%;
+        padding-left: 20px;
+        box-sizing: border-box;
+    }    
+}
+
+.button-up {
+    position: absolute;
+    top: 9px;
+    right: 14px;
+}
+
+.button-down {
+    position: absolute;
+    bottom: 9px;
+    right: 14px;
+}
+
+.btn-input {
+    border: none;
+    width: 16px;
+    height: 16px;
+}   
+
+
+.box-price {
+    display: flex;
+    gap: 38px;
+}
+
+.box-input__field::-webkit-inner-spin-button {
+    appearance: none;
+    height: 0;
+    opacity: 0;     
+}
+
+.content-button {
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+    margin-top: 18px;
+    flex-wrap: wrap;   
+}
+
+.button-card {
+    width: 200px;
+    height: 37px;
+    box-sizing: border-box;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 50px;
+    color: rgb(2, 2, 2);
+    font-family: $font-family-for-input-button;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: center;
+    background-color: transparent;
+}
+
+.cart-form {
+    grid-column: span 4;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background: $background-color;
+    width: 379px;
+    
+
+    &__title {
+        display: flex;
+        color: $text-color;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+        text-align: center;
+        margin-top: 42px;
+        margin-bottom: 35px;
+        justify-content: center;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        color: black;
+    }   
+}
+
+.item-form {
+    display: flex;
+    flex-direction: column;
+    padding-left: 27px;
+    gap: 44px;
+    padding-right: 64px;
+
+    &__input {
+        border: none;
+        border-bottom: 1px solid rgb(202, 205, 216);
+        color: $text-color;
+        font-family: $font-family-for-input-button;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        text-align: left;
+        background-color: $background-color;
+    
+    }
+
+    &__input::placeholder {
+        color: black;
+    }
+
+    &__input:hover {
+        border-color: black;
+    }
+}
+
+.button-form {
+    display: flex;
+    align-items: center;
+    display: flex;
+    justify-content: center; 
+}
+
+.place-an-order {
+    width: 290px;
+    height: 41px;
+    box-sizing: border-box;
+    border: 1px solid rgb(4, 4, 4);
+    border-radius: 20px;
+    color: $text-color;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.5px;
+    text-align: center;
+    font-family: inherit;
+}
+
+.form__button ::placeholder {
+    color: $text-color;
+    font-family: $font-family-for-input-button;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: center;
+}
+
+.item-form__input:focus {
+    border: none;
+    outline: 0;
+    outline-offset: 0;
+    border-bottom: 1px solid black;
+}
+
+.final-price {
+    margin-top: 64px;
+    margin-bottom: 18px;
+    color: $text-color;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    text-align: center;
+}
+
+.total  {
+    margin-top: 64px;
+    margin-bottom: 18px;
+    color: $text-color;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    text-align: center;
+}
